@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/button_bg.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_3d.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_chevron_left.xml" value="0.1545" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_download.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_heart.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_home.xml" value="0.148" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_live.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_paint_brush.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_person.xml" value="0.148" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_red_heart.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/ic_trending.xml" value="0.148" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/drawable/main_cardbg.xml" value="0.158" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/activity_download.xml" value="0.18" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/activity_live_download.xml" value="0.1675213675213675" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/activity_show_catagory.xml" value="0.20416666666666666" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/catagory_card.xml" value="0.25" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/fragment_3_d.xml" value="0.1675213675213675" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/fragment_live.xml" value="0.20416666666666666" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/fragment_logged_in.xml" value="0.2" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/fragment_trending.xml" value="0.22" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/live_card.xml" value="0.1675213675213675" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/main_recycle_card.xml" value="0.203125" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/shammer_layout.xml" value="0.22" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/shimmer_banner.xml" value="0.1675213675213675" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/shimmer_card.xml" value="0.1675213675213675" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/layout/top_banner_layout.xml" value="0.25" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/andoridApps/WallpaperHub/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

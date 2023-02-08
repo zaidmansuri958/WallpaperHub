@@ -1,0 +1,94 @@
+package com.zaidMansuri.wallpaperhub;
+
+import android.content.Context;
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+
+import com.facebook.shimmer.ShimmerFrameLayout;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+
+public class Trending extends Fragment {
+    RecyclerView recycle;
+    DatabaseReference databaseReference;
+    ShimmerFrameLayout simmer;
+    LinearLayout simmerLayout;
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    private String mParam1;
+    private String mParam2;
+
+    public Trending() {
+    }
+
+    public static Trending newInstance(String param1, String param2) {
+        Trending fragment = new Trending();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_trending, container, false);
+        simmer=root.findViewById(R.id.shimmer_view_container);
+        simmerLayout=root.findViewById(R.id.simmerLayout);
+        recycle = root.findViewById(R.id.recycle);
+        Context context = container.getContext();
+        ArrayList<TopbannerModal> arrayList = new ArrayList<TopbannerModal>();
+        databaseReference = FirebaseDatabase.getInstance().getReference("catagory");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    TopbannerModal obj = ds.getValue(TopbannerModal.class);
+                    arrayList.add(new TopbannerModal(obj.getImage(), obj.getName()));
+                }
+                catagoryAdapter arrayAdapter = new catagoryAdapter(arrayList, context);
+                LinearLayoutManager layoutManager = new LinearLayoutManager(context);
+                recycle.setAdapter(arrayAdapter);
+                recycle.setLayoutManager(layoutManager);
+                simmer.stopShimmer();
+                simmerLayout.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        return root;
+    }
+
+}

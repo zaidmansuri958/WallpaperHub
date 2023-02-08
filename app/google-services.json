@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241647819342",
+    "project_id": "wallpaper-hub-5ad32",
+    "storage_bucket": "wallpaper-hub-5ad32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241647819342:android:0d0925cfb83a96efce011f",
+        "android_client_info": {
+          "package_name": "com.zaidMansuri.wallpaperhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241647819342-1rk6qr7qjs0ul060j14c7rhpsfbticms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKXH-ygCFV6SIAjl3bfR6oCESBTv4tuvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241647819342-1rk6qr7qjs0ul060j14c7rhpsfbticms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
